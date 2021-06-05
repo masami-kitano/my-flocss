@@ -1,0 +1,9 @@
+$responsive-helpers: "pc", "tb", "sp";
+
+@each $resposive-helper in $responsive-helpers {
+  .u-#{$resposive-helper}-no {
+    @include mq(#{$resposive-helper}) {
+      display: none;
+    }
+  }
+}

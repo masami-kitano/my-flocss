@@ -1,0 +1,21 @@
+$sides: (
+  "top": "t",
+  "right": "r",
+  "bottom": "b",
+  "left": "l",
+);
+
+@each $side in map-keys($sides) {
+  @for $i from 0 through 20 {
+    .u-m#{map-get($sides,$side)}#{$i} {
+      margin-#{$side}: #{$i}rem !important;
+    }
+  }
+  @include mq(sp) {
+    @for $i from 0 through 20 {
+      .u-sp-m#{map-get($sides,$side)}#{$i} {
+        margin-#{$side}: #{$i}rem !important;
+      }
+    }
+  }
+}

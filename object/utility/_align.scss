@@ -1,0 +1,7 @@
+$aligns: "left", "center", "right", "justify";
+
+@each $align in $aligns {
+  .u-align-#{$align} {
+    text-align: #{$align} !important;
+  }
+}
