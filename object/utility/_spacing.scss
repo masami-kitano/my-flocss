@@ -1,21 +1,43 @@
 $sides: (
   "top": "t",
-  "right": "r",
   "bottom": "b",
-  "left": "l",
 );
 
 @each $side in map-keys($sides) {
-  @for $i from 0 through 20 {
+  @for $i from 0 through 24 {
     .u-m#{map-get($sides,$side)}#{$i} {
-      margin-#{$side}: #{$i}rem !important;
+      margin-#{$side}: #{$i * 0.25}rem !important;
     }
   }
-  @include mq(sp) {
-    @for $i from 0 through 20 {
-      .u-sp-m#{map-get($sides,$side)}#{$i} {
-        margin-#{$side}: #{$i}rem !important;
+  @include mq(md) {
+    @for $i from 0 through 24 {
+      .u-md-m#{map-get($sides,$side)}#{$i} {
+        margin-#{$side}: #{$i * 0.25}rem !important;
       }
     }
+  }
+  @include mq(sm) {
+    @for $i from 0 through 24 {
+      .u-sm-m#{map-get($sides,$side)}#{$i} {
+        margin-#{$side}: #{$i * 0.25}rem !important;
+      }
+    }
+  }
+}
+
+.u-mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.u-px25 {
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+}
+
+.u-sm-px25 {
+  @include mq(sm) {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
   }
 }

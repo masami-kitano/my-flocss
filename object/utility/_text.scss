@@ -1,0 +1,39 @@
+@for $i from 10 through 40 {
+  .u-fs#{$i} {
+    font-size: #{$i * 0.1}rem;
+  }
+}
+@for $i from 10 through 40 {
+  .u-md-fs#{$i} {
+    @include mq(md) {
+      font-size: #{$i * 0.1}rem;
+    }
+  }
+}
+@for $i from 10 through 40 {
+  .u-sm-fs#{$i} {
+    @include mq(sm) {
+      font-size: #{$i * 0.1}rem;
+    }
+  }
+}
+
+.u-fw-regular {
+  font-weight: 400;
+}
+
+.u-fw-medium {
+  font-weight: 500;
+}
+
+.u-fw-bold {
+  font-weight: 700;
+}
+
+.u-lh-1 {
+  line-height: 1 !important;
+}
+
+.u-text-roboto {
+  font-family: 'Roboto', sans-serif !important;
+}

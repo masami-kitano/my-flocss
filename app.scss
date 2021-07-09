@@ -5,6 +5,8 @@
 @import "foundation/reset";
 @import "foundation/variable";
 @import "foundation/responsive";
+@import 'foundation/mixin';
+@import 'foundation/fonts';
 @import "foundation/base";
 
 // ==========================================================================
@@ -22,8 +24,6 @@
 // Component
 // -----------------------------------------------------------------
 
-@import "object/component/button";
-
 // -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------
@@ -35,5 +35,9 @@
 // -----------------------------------------------------------------
 
 @import "object/utility/align";
-@import "object/utility/spacing";
+@import 'object/utility/flex';
+@import 'object/utility/position';
 @import "object/utility/responsive-helper";
+@import "object/utility/sizing";
+@import "object/utility/spacing";
+@import "object/utility/text";
