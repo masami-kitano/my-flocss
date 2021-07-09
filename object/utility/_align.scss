@@ -5,3 +5,19 @@ $aligns: "left", "center", "right", "justify";
     text-align: #{$align} !important;
   }
 }
+
+@include mq(md) {
+  @each $align in $aligns {
+    .u-md-align-#{$align} {
+      text-align: #{$align} !important;
+    }
+  }
+}
+
+@include mq(sm) {
+  @each $align in $aligns {
+    .u-sm-align-#{$align} {
+      text-align: #{$align} !important;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+$sizes: 50, 100;
+
+@each $size in $sizes {
+  .u-w#{$size} {
+    width: #{$size + '%'} !important;
+  }
+
+  .u-h#{$size} {
+    height: #{$size + '%'} !important;
+  }
+}
+
+@include mq(md) {
+  @each $size in $sizes {
+    .u-md-w#{$size} {
+      width: #{$size + '%'} !important;
+    }
+
+    .u-md-h#{$size} {
+      height: #{$size + '%'} !important;
+    }
+  }
+}
+
+@include mq(sm) {
+  @each $size in $sizes {
+    .u-sm-w#{$size} {
+      width: #{$size + '%'} !important;
+    }
+
+    .u-sm-h#{$size} {
+      height: #{$size + '%'} !important;
+    }
+  }
+}
