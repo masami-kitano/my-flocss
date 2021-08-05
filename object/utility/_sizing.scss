@@ -10,6 +10,18 @@ $sizes: 50, 100;
   }
 }
 
+@include mq(lg) {
+  @each $size in $sizes {
+    .u-lg-w#{$size} {
+      width: #{$size + '%'} !important;
+    }
+
+    .u-lg-h#{$size} {
+      height: #{$size + '%'} !important;
+    }
+  }
+}
+
 @include mq(md) {
   @each $size in $sizes {
     .u-md-w#{$size} {

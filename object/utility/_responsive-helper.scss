@@ -1,9 +1,18 @@
-$responsive-helpers: "xs", "sm", "md", "lg", "xl","ie";
+$responsive-helpers: "xs", "sm", "md", "lg", "xl", "xxl", "ie";
 
 @each $resposive-helper in $responsive-helpers {
   .u-#{$resposive-helper}-no {
     @include mq(#{$resposive-helper}) {
       display: none;
+    }
+  }
+}
+
+@each $resposive-helper in $responsive-helpers {
+  .u-#{$resposive-helper}-block {
+    display: none;
+    @include mq(#{$resposive-helper}) {
+      display: block;
     }
   }
 }
