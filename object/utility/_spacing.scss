@@ -4,22 +4,29 @@ $sides: (
 );
 
 @each $side in map-keys($sides) {
-  @for $i from 0 through 24 {
+  @for $i from 0 through 20 {
     .u-m#{map-get($sides,$side)}#{$i} {
-      margin-#{$side}: #{$i * 0.25}rem !important;
+      margin-#{$side}: #{$i * 0.5}rem !important;
+    }
+  }
+  @include mq(lg) {
+    @for $i from 0 through 20 {
+      .u-md-m#{map-get($sides,$side)}#{$i} {
+        margin-#{$side}: #{$i * 0.5}rem !important;
+      }
     }
   }
   @include mq(md) {
-    @for $i from 0 through 24 {
+    @for $i from 0 through 20 {
       .u-md-m#{map-get($sides,$side)}#{$i} {
-        margin-#{$side}: #{$i * 0.25}rem !important;
+        margin-#{$side}: #{$i * 0.5}rem !important;
       }
     }
   }
   @include mq(sm) {
-    @for $i from 0 through 24 {
+    @for $i from 0 through 20 {
       .u-sm-m#{map-get($sides,$side)}#{$i} {
-        margin-#{$side}: #{$i * 0.25}rem !important;
+        margin-#{$side}: #{$i * 0.5}rem !important;
       }
     }
   }
