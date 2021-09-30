@@ -1,4 +1,4 @@
-$responsive-helpers: "xs", "sm", "md", "lg", "xl", "xxl", "ie";
+$responsive-helpers: "ie", "xxl", "xl", "lg", "md", "sm", "xs";
 
 @each $resposive-helper in $responsive-helpers {
   .u-#{$resposive-helper}-no {

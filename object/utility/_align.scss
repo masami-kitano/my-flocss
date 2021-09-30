@@ -6,6 +6,14 @@ $aligns: "left", "center", "right", "justify";
   }
 }
 
+@include mq(lg) {
+  @each $align in $aligns {
+    .u-lg-align-#{$align} {
+      text-align: #{$align} !important;
+    }
+  }
+}
+
 @include mq(md) {
   @each $align in $aligns {
     .u-md-align-#{$align} {

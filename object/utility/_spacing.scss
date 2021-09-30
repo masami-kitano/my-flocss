@@ -37,14 +37,15 @@ $sides: (
   margin-left: auto;
 }
 
-.u-px25 {
-  padding-right: 2.5rem;
-  padding-left: 2.5rem;
+.u-px20 {
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
-.u-sm-px25 {
-  @include mq(sm) {
-    padding-right: 2.5rem;
-    padding-left: 2.5rem;
-  }
+.u-pl20 {
+  padding-left: 2rem;
+}
+
+.u-pr20 {
+  padding-right: 2rem;
 }
