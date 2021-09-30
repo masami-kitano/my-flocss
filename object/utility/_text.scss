@@ -18,22 +18,58 @@
   }
 }
 
-.u-fw-regular {
+.u-text-notoSans {
+  font-family: 'Noto Sans JP', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', Meiryo, Verdana, sans-serif !important;
+}
+
+.u-text-sMincho {
+  font-family: 'Shippori Mincho B1', serif !important;
+}
+
+.u-text-weight-thin {
+  font-weight: 100;
+}
+
+.u-text-weight-light {
+  font-weight: 300;
+}
+
+.u-text-weight-regular {
   font-weight: 400;
 }
 
-.u-fw-medium {
+.u-text-weight-medium {
   font-weight: 500;
 }
 
-.u-fw-bold {
+.u-text-weight-semi-bold {
+  font-weight: 600;
+}
+
+.u-text-weight-bold {
   font-weight: 700;
 }
 
-.u-lh-1 {
+.u-text-weight-extra-bold {
+  font-weight: 800;
+}
+
+.u-text-weight-black {
+  font-weight: 900;
+}
+
+.u-text-height-regular {
   line-height: 1 !important;
 }
 
-.u-text-roboto {
-  font-family: 'Roboto', sans-serif !important;
+.u-text-height-medium {
+  line-height: 1.5 !important;
+}
+
+.u-text-height-semiWide {
+  line-height: 1.8 !important;
+}
+
+.u-text-height-wide {
+  line-height: 2 !important;
 }
